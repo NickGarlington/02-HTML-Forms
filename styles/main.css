@@ -3,31 +3,11 @@ body {
   background-color: #81BCE6;
 }
 
-main {
+/*main {
   width: 980px;
   margin: 0 auto;
-}
+}*/
 
-.content {
-  height: 500px;
-
-  float: left;
-  width: 326px;
-}
-
-.middle {
-  height: 500px;
-
-  float: left;
-  width: 326px;
-}
-
-.sidebar {
-  height: 500px;
-
-  float: left;
-  width: 326px;
-}
 
 label {
   display: block;
@@ -52,16 +32,31 @@ input, select, textarea {
   font-family: Helvetica;
 }
 
-@media screen and (min-width: 800px) {
-  textarea, input {
+@media screen and (min-width: 500px) {
 
-  }
-
-  select {
-
+  .content, .middle {
+    width: 50%;
+    float: left;
   }
 
   .sidebar {
-    
+     clear: both;
   }
+}
+
+
+@media screen and (min-width: 980px) {
+  .content, .middle, .sidebar {
+    width: 33%;
+    float: left;
+  }
+
+  .sidebar {
+     clear: none;
+  }
+}
+
+input:focus {
+  border: 2px solid grey;
+  outline: none;
 }
