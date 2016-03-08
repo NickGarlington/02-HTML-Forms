@@ -1,0 +1,67 @@
+
+body {
+  background-color: #81BCE6;
+}
+
+main {
+  width: 980px;
+  margin: 0 auto;
+}
+
+.content {
+  height: 500px;
+
+  float: left;
+  width: 326px;
+}
+
+.middle {
+  height: 500px;
+
+  float: left;
+  width: 326px;
+}
+
+.sidebar {
+  height: 500px;
+
+  float: left;
+  width: 326px;
+}
+
+label {
+  display: block;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: Helvetica;
+}
+
+.form-item {
+  margin: 20px 0 0 0;
+}
+
+input, select, textarea {
+  border: 2px solid #fff;
+  background-color: #81BCE6;
+  color: #fff;
+  width: 300px;
+}
+
+::-webkit-input-placeholder {
+  color: grey;
+  font-family: Helvetica;
+}
+
+@media screen and (min-width: 800px) {
+  textarea, input {
+
+  }
+
+  select {
+
+  }
+
+  .sidebar {
+    
+  }
+}
